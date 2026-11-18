@@ -18,7 +18,6 @@
 | `xq_tool` | 协议数据解码工具 |
 | `rebootServer` / `_output` / 各项目的 `upload.ts`、`cmd` | 脱敏后的维护、发布和部署脚本 |
 | `gradle` 与根目录 Gradle 文件 | Android 工作区构建入口 |
-| `tools/check_release.py` | 不联网的发布内容检查 |
 
 
 ## 配置与构建
