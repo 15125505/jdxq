@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "CommonJS",
+    "target": "es5",
+    "allowJs": true,
+    "sourceMap": true
+  },
+  "ts-node": {
+    "files": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

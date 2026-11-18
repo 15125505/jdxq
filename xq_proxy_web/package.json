@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "根据Demo模板自动化创建的工程",
+  "scripts": {
+    "up": "ts-node upload.ts",
+    "start": "docsify serve doc"
+  },
+  "keywords": [],
+  "author": "Demo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-ssh": "^13.1.0",
+    "typescript": "^5.1.6"
+  }
+}

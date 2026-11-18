@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "node-loader": "^2.0.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "name": "my-webpack-project",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "crlog": "^1.0.8",
+    "node-ssh": "^13.1.0"
+  }
+}

@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 8px;
+    background: url("http://server-9.example.invalid/ax/img/bg01.jpg") #0a141d repeat;
+    /*background: #e6e6e6;*/
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#prog {
+    display: flex;
+    align-items: center;
+}
+
+#progress {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    flex: 1;
+    overflow-y: auto;
+    opacity: 0.6;
+}
+
+#log {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.log {
+    display: flex;
+    font-size: 15px;
+}
+
+.log1, .log2 {
+    margin: 1px;
+    padding: 1px 2px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.log1 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.log2 {
+    flex: 1;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.cr0 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.cr1 {
+    color: rgba(0, 255, 0, 1);
+}
+
+.cr2 {
+    color: rgba(255, 255, 0, 1);
+}
+
+.cr3 {
+    color: rgba(255, 100, 50, 1);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #00ff88;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+/*下面是一些按钮样式*/
+
+button {
+    margin: 5px 8px 5px 0;
+}
+
+.pure-button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.pure-button-group {
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+}
+
+.opera-only :-o-prefocus, .pure-button-group {
+    word-spacing: -.43em;
+}
+
+.pure-button-group .pure-button {
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+    color: #444;
+    color: rgba(0, 0, 0, .8);
+    border: 1px solid #999;
+    border: none transparent;
+    background-color: #e6e6e6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.pure-button-hover, .pure-button:focus, .pure-button:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, .05)), to(rgba(0, 0, 0, .1)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+}
+
+.pure-button:focus {
+    outline: 0;
+}
+
+.pure-button-active, .pure-button:active {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
+    border-color: #000;
+}
+
+.pure-button-disabled, .pure-button-disabled:active, .pure-button-disabled:focus, .pure-button-disabled:hover, .pure-button[disabled] {
+    border: none;
+    background-image: none;
+    opacity: .4;
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.pure-button-hidden {
+    display: none;
+}
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+    background-color: #0078e7;
+    color: #fff;
+}
+
+.pure-button-group .pure-button {
+    margin: 0;
+    border-radius: 0;
+    border-right: 1px solid #111;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.pure-button-group .pure-button:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.pure-button-group .pure-button:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-right: none;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65);
+    /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60);
+    /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20);
+    /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221);
+    /* this is a light blue */
+}
+
+
+
+.vip {
+    position: relative;
+    cursor: pointer;
+    margin: 5px 8px 5px 0;
+}
+
+.vip-button {
+    background: rgb(9, 187, 7);
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.vip-button:hover {
+    opacity: 0.8;
+}
+
+.vip-menu {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0 0 5px #ff0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.vip:hover .vip-menu {
+    display: block;
+}
+
+.menu-item {
+    padding: 5px;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background: #555555;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.dlg-input {
+    width: 100px;
+}

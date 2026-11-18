@@ -1,0 +1,140 @@
+
+.form-horizontal {
+    text-align: left;
+    font-size: .8rem;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333333333%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.form-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff none;
+    border: 0.05rem solid #bcc3ce;
+    border-radius: 0.1rem;
+    color: #3b4351;
+    display: block;
+    font-size: .8rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    max-width: 100%;
+    outline: none;
+    padding: 0.25rem 0.4rem;
+    position: relative;
+    transition: background .2s, border .2s, box-shadow .2s, color .2s;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-label {
+    display: block;
+    line-height: 1.2rem;
+    padding: 0.3rem 0;
+    font-size: .8rem;
+}
+
+.form-input-hint {
+    color: #bcc3ce;
+    font-size: .7rem;
+    margin-top: 0.2rem;
+}
+
+
+.form-radio .form-icon {
+    background: #fff;
+    height: 0.8rem;
+    left: 0;
+    top: 0.3rem;
+    width: 0.8rem;
+}
+
+.form-checkbox,
+.form-radio,
+.form-switch {
+    display: block;
+    line-height: 1.2rem;
+    margin: .2rem 0;
+    min-height: 1.4rem;
+    padding: .1rem .4rem .1rem 0.001rem;
+    position: relative;
+}
+
+.form-checkbox input {
+    margin-left: 0;
+}
+
+
+.form-inline {
+    display: inline-block;
+}
+
+.form-select[size],
+.form-select[multiple] {
+    height: auto;
+    padding: .25rem .4rem;
+}
+
+.form-select[size] option,
+.form-select[multiple] option {
+    padding: .1rem .2rem;
+}
+
+.form-select:not([multiple]):not([size]) {
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%204%205%27%3E%3Cpath%20fill=%27%23667189%27%20d=%27M2%200L0%202h4zm0%205L0%203h4z%27/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+    padding-right: 1.2rem;
+}
+
+.form-select {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 0.05rem solid #bcc3ce;
+    border-radius: 0.1rem;
+    color: inherit;
+    font-size: .8rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    outline: none;
+    padding: 0.25rem 0.4rem;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+}
+
+.toast.toast-error {
+    background: rgba(232, 86, 0, .95);
+    border-color: #e85600;
+}
+
+.toast {
+    background: rgba(48, 55, 66, .95);
+    border: 0.05rem solid #303742;
+    border-radius: 0.1rem;
+    color: #fff;
+    display: block;
+    padding: 0.4rem;
+    width: 100%;
+}

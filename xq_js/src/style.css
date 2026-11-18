@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    padding: 8px;
+    background: url("http://server-9.example.invalid/ax/img/bg04.jpg") #0a141d repeat;
+    /*background-size: cover;*/
+    color: white;
+}
+
+.cloud_state {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    margin: 2px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#prog {
+    display: flex;
+    align-items: center;
+}
+
+#progress {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 5px 0;
+    padding-top: 3px;
+    box-shadow: 0 0 5px #ff0 inset;
+    border-radius: 4px;
+}
+
+.user-button {
+    display: flex;
+}
+
+#user-info {
+    color: yellow;
+    padding: 5px;
+    width: 230px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bottom {
+    flex: 1;
+    overflow-y: auto;
+    opacity: 0.6;
+}
+
+#log {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.log {
+    display: flex;
+    font-size: 15px;
+}
+
+.log1, .log2 {
+    margin: 1px;
+    padding: 1px 2px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.log1 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.log2 {
+    flex: 1;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.cr0 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.cr1 {
+    color: rgba(0, 255, 0, 1);
+}
+
+.cr2 {
+    color: rgba(255, 255, 0, 1);
+}
+
+.cr3 {
+    color: rgba(255, 100, 50, 1);
+}
+
+.cr01 {
+    color: #fa5151;
+}
+
+.cr02 {
+    color: #ffc300;
+}
+
+.cr03 {
+    color: #10aeef;
+}
+
+.cr04 {
+    color: #91d300;
+}
+
+.bottom-vip {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    margin: 3px 0;
+}
+
+.bottom-tip {
+    text-align: right;
+}
+
+
+.vip {
+    position: relative;
+    cursor: pointer;
+    margin: 5px 8px 5px 0;
+}
+
+.vip-button {
+    background: rgb(9, 187, 7);
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.vip-button:hover {
+    opacity: 0.8;
+}
+
+.vip-menu {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0 0 5px #ff0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.vip:hover .vip-menu {
+    display: block;
+}
+
+.menu-item {
+    padding: 5px;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background: #555555;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #00ff88;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+/*下面是一些按钮样式*/
+
+button {
+    margin: 5px 8px 5px 0;
+}
+
+.pure-button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.pure-button-group {
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+}
+
+.opera-only :-o-prefocus, .pure-button-group {
+    word-spacing: -.43em;
+}
+
+.pure-button-group .pure-button {
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+    color: #444;
+    color: rgba(0, 0, 0, .8);
+    border: 1px solid #999;
+    border: none transparent;
+    background-color: #e6e6e6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.pure-button-hover, .pure-button:focus, .pure-button:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, .05)), to(rgba(0, 0, 0, .1)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+}
+
+.pure-button:focus {
+    outline: 0;
+}
+
+.pure-button-active, .pure-button:active {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
+    border-color: #000;
+}
+
+.pure-button-disabled, .pure-button-disabled:active, .pure-button-disabled:focus, .pure-button-disabled:hover, .pure-button[disabled] {
+    border: none;
+    background-image: none;
+    opacity: .4;
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.pure-button-hidden {
+    display: none;
+}
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+    background-color: #0078e7;
+    color: #fff;
+}
+
+.pure-button-group .pure-button {
+    margin: 0;
+    border-radius: 0;
+    border-right: 1px solid #111;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.pure-button-group .pure-button:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.pure-button-group .pure-button:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-right: none;
+}
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+    background-color: #0078e7;
+    color: #fff;
+}
+
+.buy-item {
+    display: flex;
+    align-items: center;
+}
+
+.off {
+    width: 50px;
+}
+
+.ad {
+    position: relative;
+    cursor: pointer;
+    margin: 5px 8px 5px 0;
+}
+
+.ad-button {
+    background: rgba(92, 173, 255, 0.5);
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    width: 250px;
+}
+
+.ad-button:hover {
+    opacity: 0.8;
+}
+
+.ad-menu {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0 0 5px #ff0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.ad:hover .ad-menu {
+    display: block;
+}
+
+@keyframes myfirst {
+    0% {
+        background: red;
+    }
+    25% {
+        background: yellow;
+    }
+    50% {
+        background: blue;
+    }
+    100% {
+        background: red;
+    }
+}
+
+
+@keyframes linearGradientMove {
+    100% {
+        background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+    }
+}
+
+.ad-border {
+    padding: 2px;
+
+    /*下面这个动画的实现原理，用4个渐变的背景图作为4条边，然后用户动画修改背景图的起始位置*/
+    background: linear-gradient(90deg, #aaa 50%, transparent 0) repeat-x 0 0,
+    linear-gradient(90deg, #aaa 50%, transparent 0) repeat-x 0 100%,
+    linear-gradient(0deg, #aaa 50%, transparent 0) repeat-y 0 0,
+    linear-gradient(0deg, #aaa 50%, transparent 0) repeat-y 100% 0;
+    background-size: 4px 1px, 4px 1px, 1px 4px, 1px 4px;
+
+    animation: linearGradientMove .3s infinite linear;
+}
+
+.red-point {
+    position: relative;
+}
+
+.red-point::before {
+    content: " ";
+    border: 3px solid red; /*设置红色*/
+    border-radius: 3px; /*设置圆角*/
+    position: absolute;
+    z-index: 1000;
+    right: -10px;
+}
+
+
+form label {
+    text-align: left;
+    display: block;
+}
+
+.tidy-country {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.tidy-country label {
+    padding-right: 30px;
+}
+
+.import-text {
+    font-weight: bold;
+    color: blue;
+}
+
+.tidy-range {
+    display: flex;
+    align-items: center;
+}
+
+.tidy-range button {
+    margin: 5px;
+}
+
+.tidy-range input {
+    width: 80px;
+}
+
+.narrow-input {
+    width: 80px !important;
+}
+
+.select-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    padding: 10px;
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">江东小乔</string>
+
+    <string name="start_netbare">启动侦测</string>
+    <string name="stop_netbare">停止侦测</string>
+    <string name="clear">清除日志</string>
+    <string name="usage">使用说明</string>
+
+</resources>

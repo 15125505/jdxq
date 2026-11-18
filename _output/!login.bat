@@ -1,0 +1,2 @@
+"C:\Program Files\Git\usr\bin\ssh.exe" -p 60022 maintainer@example.invalid -i forUpload  -o StrictHostKeyChecking=no
+

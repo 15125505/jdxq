@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">七星坛</string>
+    <string name="button_scan">侦测</string>
+    <string name="button_upload">上传</string>
+</resources>

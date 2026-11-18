@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="gbk">
+<head>
+    <meta charset="UTF-8">
+    <title>江东小乔</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+<script>
+    function copyText() {
+        const text = document.getElementById("pac").textContent;
+        const temp = document.createElement("textarea");
+        temp.value = text;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        document.body.removeChild(temp);
+        alert("已复制网址：" + text);
+    }
+</script>
+
+<div class="container">
+
+    <h1>江东小乔安卓证书配置说明</h1>
+    <h2>使用须知</h2>
+    <ul>
+        <li>这是江东小乔安卓App的证书配置说明。</li>
+        <li><a href="http://server-9.example.invalid/ax/xq-1.1.apk" target="_blank">下载江东小乔安卓</a></li>
+    </ul>
+
+    <hr/>
+
+    <ul>
+        <li>首先，你需要保证本页面是在<b>浏览器</b>（特别说明，不要在微信中打开）中打开的。点击<a
+                href="xiaoqiao.cer"><b>下载cer证书</b></a>完成证书下载。(注意：部分手机只能安装crt证书<a
+                href="xiaoqiao.crt"><b>下载crt证书</b></a>)
+        </li>
+        <li>在系统的<b>设置</b>中搜索<b>证书</b>，现在，就是安卓蛋疼的地方所在了，不同手机的的结果完全不同
+            <ul>
+                <li>如果是小米手机，那么点击<b>CA证书</b>，其路径是：<span
+                        class="sub-title">安全/更多安全设置/加密与凭据/安装证书/CA证书</span></li>
+                <li>如果是vivo手机，那么点击<b>CA证书</b>，其路径是：<span
+                        class="sub-title">安全>更多安全设置>从存储设备安装</span></li>
+                <li>如果是华为手机，那么点击<b>CA证书</b>，其路径是：<span
+                        class="sub-title">安全>更多安全设置>加密与凭据>从存储设备安装</span></li>
+                <li>如果是荣耀手机，那么点击<b>从存储设备安装</b>，其路径是：<span class="sub-title">安全>更多安全设置>加密与凭据>从存储设备安装</span>
+                </li>
+                <li>如果是一加手机，那么点击<b>从存储设备安装证书</b>，其路径是：<span
+                        class="sub-title">系统安全>凭据存储</span></li>
+                <li>如果是nova手机，那么搜索出来的一个都不能点，而是从这个路径去找：<span class="sub-title">安全>更多安全设置>加密与凭据>从存储设备安装</span>
+                </li>
+                <li>其它安卓设备也基本都可以按照类似的路径去寻找，核心关键是在安全设置中，安装CA证书。</li>
+            </ul>
+        </li>
+        <li>接下来，不出意外在安装时会要求输入密码或者指纹验证等等，照做就是。选择文件时，选择刚刚下载的<b>xiaoqiao.cer</b>文件即可。如果找不见，仔细找找，确实每个手机不太一样……
+        </li>
+        <li>配置好之后，在江东小乔App中可以检查证书是否配置成功。
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
+
+

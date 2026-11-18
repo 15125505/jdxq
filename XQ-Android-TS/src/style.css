@@ -1,0 +1,73 @@
+body {
+    /*font-family: Arial, sans-serif;*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("http://server-9.example.invalid/ax/img/bg01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+b {
+    color: #e76f51;
+    font-size: 16px;
+}
+
+a {
+    color: blue;
+}
+
+.crBlack {
+    color: #264653;
+}
+
+.crGreen {
+    color: #008000;
+}
+
+.crBlue {
+    color: #38a3a5;
+}
+
+.crOrange {
+    color: #f4a261;
+}
+
+.crRed {
+    color: #e76f51;
+}
+
+.bottom {
+    flex: 1;
+    overflow-y: auto;
+}
+
+#log {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.log {
+    display: flex;
+    font-size: 18px;
+}
+
+.log1, .log2 {
+    margin: 2px;
+    padding: 2px 4px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.log1 {
+    color: #264653;
+}
+
+.log2 {
+    flex: 1;
+    white-space: pre-wrap;
+    word-break: break-all;
+}

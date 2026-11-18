@@ -1,0 +1,7 @@
+/cache
+/*.exe
+/*.iobj
+/*.ipdb
+/*.pdb
+/*.ilk
+/*.7z

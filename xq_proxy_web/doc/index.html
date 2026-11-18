@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>江东小乔</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="src/vue.css">
+</head>
+<body>
+<div id="app"></div>
+<script>
+    window.$docsify = {
+        name: '江东小乔使用说明',
+        loadSidebar: true,
+        loadNavbar: true,
+        subMaxLevel: 2,
+        auto2top: true,
+        copyCode: {
+            buttonText: '点击复制',
+            errorText: '错误',
+            successText: '已复制',
+        },
+        search: {
+            maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+            paths: [],
+            placeholder: '搜索',
+            noData: '找不到结果',
+            depth: 4,
+            hideOtherSidebarContent: false,
+        }
+    }
+</script>
+<script src="src/docsify.min.js"></script>
+<script src="src/search.min.js"></script>
+<script src="src/docsify-copy-code.min.js"></script>
+</body>
+</html>
